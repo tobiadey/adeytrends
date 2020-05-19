@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="{{ url_for('static', filename= 'css/main.css')}}">
+
+<!-- head -->
+{%block head%}
+  <title>About</title>
+{% endblock %}
+
+<!-- body -->
+{%block body%}
+
+  <div class="about-header">
+      <a class="back-to-home" href="/#">←&nbsp; Home Page</a>
+
+  </div>
+
+    <!-- Site main body -->
+    <nav >
+      <ul class="About-container no-style">
+        <li class="about-us">
+
+          <p class="font_8">This is AdeyTrends, a media company run by a Gen Zer(19 years old). I understand the older generation find it quite difficult to understand us, which is why I have created this brand. Get into our ecosystem, discover things like:</p>
+          <ul class="font_8">
+        	<li>
+            <p class="font_8">Latest TRENDS</p>
+        	</li>
+        	<li>
+        	<p class="font_8">What we THINK</p>
+        	</li>
+        	<li>
+        	<p class="font_8">What we BUY</p>
+        	</li>
+        	<li>
+        	<p class="font_8">What we WATCH</p>
+        	</li>
+        </ul>
+        <p class="font_8">&nbsp;</p>
+        <p class="font_8">I find it stupid reading all the BS written about us just so people can give the impression that they understand the youth. Just because you have customers who are Gen Zers does not mean you understand us and know how we function… you have just been able to bring something of value to us.&nbsp;</p>
+        <p class="font_8">&nbsp;</p>
+        <!-- <p class="font_8">To gain insight into our opinions
+          <a style= color:blue; href="mailto:adeytrends@gmail.com?subject=Contact">contact us</a>
+           or check out my
+          <a target="_blank" style= color:blue; href="https://medium.com/@tobiadey">medium blog</a>
+           .</p> -->
+        </li>
+        <li class="tobis-info">
+          <div class="profile-image-container">
+            <img src="{{ url_for('static', filename= 'img/profile.png')}}" alt="Avatar" class="profile-image">
+          </div>
+
+          <h4>Tobi Adewunmi</h4>
+          <h5>Founder & CEO</h5>
+          <p>
+            A Young Entrepreneur looking to help out GenZ enthusiast .
+            <br> This is just one of my many projects.
+          </p>
+        </li>
+
+
+      </ul>
+    </nav>
+
+
+
+{% endblock %}
+
+
+
+
+
+      <!-- <div class="about-us">
+
+      </div>
+
+
+      <div class="tobis-info">
+
+
+      </div>  -->

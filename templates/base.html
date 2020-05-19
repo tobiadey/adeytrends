@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/main.css')}}">
+    <script type="text/javascript" src="{{ url_for('static', filename= 'js/main.js')}}"></script>
+    {%block head%}
+
+    {% endblock %}
+  </head>
+
+  <body>
+
+    <!-- Site header -->
+    <div class="header-container">
+      <div class="top-header">
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+              <a href="/#">Home</a>
+              <a href="/about">About</a>
+              <a href="mailto:adeytrends@gmail.com?subject=Contact">Contact</a>
+
+            </div>
+        </div>
+      </div>
+    </div>
+
+    {%block body%}
+    {% endblock %}
+
+
+  </body>
+
+
+
+
+
+</html>
