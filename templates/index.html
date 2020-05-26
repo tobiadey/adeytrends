@@ -1,51 +1,197 @@
-{% extends 'base.html'%}
-
-<!-- head -->
-{%block head%}
-  <title>AdeyTrends</title>
-{% endblock %}
-
-
-<!-- body -->
-{%block body%}
-
-  <div class="header-container">
-      <div class="social-link-container">
-        <a class="social-link" target="_blank" href="https://www.instagram.com/adeytrends/">
-          <img target="_blank" src="https://image.flaticon.com/icons/svg/733/733614.svg" alt="Instagram">
-        </a>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device, initial-scale=1">
+    <title> AdeyTrends</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/main1.css')}}">
+  </head>
+  <body>
+    <header>
+      <div class="menu-toggler">
+        <div class="bar half start"></div>
+        <div class="bar"></div>
+        <div class="bar half end"></div>
       </div>
-      <div class="random-names-img">
-        <img src="https://uploads-ssl.webflow.com/5305024184cddf3925000bdf/5ca8fff1d636b760775c1749_title.svg">
+      <nav class="top-nav">
+        <ul class="nav-list">
+          <li><a href="index1.html" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="mailto:adeymedia1@gmail.com" class="nav-link">Contact</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        </ul>
+      </nav>
+      <div class="landing-text">
+        <h1>Adey</h1>
+        <h1>Trends</h1>
+        <h6>AdeyTrends| Find the latest trends</h6>
       </div>
-    </div>
+    </header>
 
 
-  <!-- Site main body -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+          <img src="{{ url_for('static', filename= 'img1/logo.png')}}" alt="">
+        </div>
+        <div class="about-details" data-aos="fade-right" data-aos-delay="600">
+          <div class="about-heading">
+            <h1>About</h1>
+            <h6>AdeyTrends</h6>
+          </div>
+          <p>
+            <li class="about-us">
+              <p class="font_8">A media company run by a Gen Zer(19 years old). We plan to mix Tech and fashion together by building many different tools. Also we understand the older generation find it quite difficult to understand us, so get into our ecosystem. Discover things like:</p>
+              <ul class="font_8">
+            	<li class="margin-top">
+                <p class="font_8">Latest TRENDS</p>
+            	</li>
+            	<li>
+            	<p class="font_8">What we THINK</p>
+            	</li>
+            	<li>
+            	<p class="font_8">What we BUY</p>
+            	</li>
+            	<li>
+            	<p class="font_8">What we WATCH</p>
+            	</li>
+            </ul>
+            <p class="font_8">&nbsp;</p>
+            <p class="font_8">I find it stupid reading all the BS written about us just so people can give the impression that they understand the youth. Just because you have customers who are Gen Zers does not mean you understand us and know how we function… you have just been able to bring something of value to us.&nbsp;</p>
+            <p class="font_8">&nbsp;</p>
+            <!-- <p class="font_8">To gain insight into our opinions
+              <a style= color:blue; href="mailto:adeytrends@gmail.com?subject=Contact">contact us</a>
+               or check out my
+              <a target="_blank" style= color:blue; href="https://medium.com/@tobiadey">medium blog</a>
+               .</p> -->
+            </li>
+           </p>
+           <div class="social-media">
+             <ul class="nav-list">
+               <li>
+                 <a href="#" class="icon-link">
+                   <i class="fab fa-instagram"></i>
+                 </a>
+               </li>
+             </ul>
+           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+    </section>
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Services</h1>
+          <h6 >What we offer</h6>
+        </div>
+        <div class="my-skills" data-aos="fade-in" data-aos-delay="300">
+          <div class="skill">
+            <div class="icon-container">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <h1>Get the Latest Trends</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            </p>
+          </div>
+
+          <div class="skill" data-aos="fade-in" data-aos-delay="600">
+            <div class="icon-container">
+              <i class="fas fa-code"></i>
+            </div>
+            <h1>Creating tools</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            </p>
+          </div>
+
+          <div class="skill" data-aos="fade-in" data-aos-delay="900">
+            <div class="icon-container">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <h1>Understand GenZ</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-    <div class="button-container">
-      <a href="/update"><button class="button"type="button" name="button"> EXPLORE</button> </a>
 
-    </div>
+    <section class="experience" id="experience">
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-heading">
+          <h1>Portfolio</h1>
+          <h6>View some of our recent work</h6>
+        </div>
 
+        <div class="portfolio-item">
+          <div class="portfolio-img has-margin-right aos-init aos-animate" data-aos="fade-right" data-aos-delay="300">
+            <img src="/static/img1/portitem1.jpeg" alt="">
+          </div>
+          <div class="portfolio-description aos-init aos-animate" data-aos="fade-left" data-aos-delay="600">
+            <h6>Currently</h6>
+            <h1>COMMING SOON!</h1>
+            <p>
+              Currently working on projects!
+            </p>
+            <a href="#" class="cta"> View Details</a>
+          </div>
+        </div>
 
+        <div class="portfolio-item">
+          <div class="portfolio-description has-margin-right aos-init aos-animate" data-aos="fade-right" data-aos-delay="900">
+            <h6>Working on</h6>
+            <h1>COMMING SOON!</h1>
+            <p>
+              Currently working on projects!
+            </p>
+            <a href="#" class="cta"> View Details</a>
+          </div>
+          <div class="portfolio-img aos-init aos-animate" data-aos="fade-left" data-aos-delay="1200">
+            <img src="/static/img1/portitem2.jpeg" alt="">
+          </div>
+        </div>
 
+        <div class="portfolio-item">
+          <div class="portfolio-img has-margin-right aos-init aos-animate" data-aos="fade-right" data-aos-delay="1500">
+            <img src="/static/img1/portitem3.jpeg" alt="">
+          </div>
+          <div class="portfolio-description aos-init aos-animate" data-aos="fade-left" data-aos-delay="1800">
+            <h6>Projects!</h6>
+            <h1>COMMING SOON!</h1>
+            <p>
+              Currently working on projects!
+            </p>
+            <a href="#" class="cta"> View Details</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <footer class="copyright">
+      <div class="up" id="up">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+      <p>&copy; 2020 AdeyTrends</p>
+    </footer>
 
-{% endblock %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="{{ url_for('static', filename= 'js/main.js')}}"></script>
 
-
-<!-- Site footer -->
-<!-- <div class="footer">
-  <div class="w-container">
-  <div class="navigation-bar">
-  <a class="nav-link" href="/#">Home</a>
-  <a class="nav-link" href="mailto:adeytrends@gmail.com?subject=Contact">Contact</a>
-  <a class="nav-link" href="/about">About</a>
-  <a class="nav-link" target="_blank" href="https://www.instagram.com/adeytrends/">Instagram</a>
-  <a class="float-right nav-link w--current" href="/#">ADEYTRENDS</a>
-  </div>
-  <p class="nav-link">Copyright © 2020</p>
-  </div>
-</div> -->
+  </body>
+</html>
