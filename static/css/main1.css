@@ -564,7 +564,7 @@ input[type="submit"]:hover{
   }
 
   .landing-text h1{
-    font-size: 0rem;
+    font-size: 15rem;
   }
 
   .landing-text h6{
@@ -621,7 +621,7 @@ input[type="submit"]:hover{
   }
 }
 
-@media screen and max-width(600px) {
+@media screen and (max-width:600px) {
 
   .menu-toggler{
     top: 2rem;
